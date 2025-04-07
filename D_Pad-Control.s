@@ -50,10 +50,10 @@ P2_X: .word 0x36    # Left Paddle (original reference)
     j loop
     
     move_up1:
-        la t0, P1_Y # Guarda direccion p1_y
-        lw t1, 0(t0) # guarda el valor p1_y
-        li t2, 0x0 # guarda cero
-        beq t1, t2, loop #comprueba
+        la t0, P1_Y 
+        lw t1, 0(t0) 
+        li t2, 0x0 
+        beq t1, t2, loop
         
         addi t1, t1, -1
         sw t1, 0(t0)
