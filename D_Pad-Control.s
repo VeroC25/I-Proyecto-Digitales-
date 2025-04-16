@@ -33,18 +33,18 @@ P2_X: .word 0x36    # Left Paddle (original reference)
             bnez t1, move_up1
             
         # DOWN button reading:
-            li t0, 0xf0002f44
-            lw t1, 4(t0)
+            li t0, 0xf0002f48
+            lw t1, 0(t0)
             bnez t1, move_down2
             
         # LEFT button reading:
-            li t0, 0xf0002f44
-            lw t1, 8(t0)
+            li t0, 0xf0002f4c
+            lw t1, 0(t0)
             bnez t1, move_down1
             
         # RIGHT button reading:
-            li t0, 0xf0002f44
-            lw t1, 12(t0)
+            li t0, 0xf0002f50
+            lw t1, 0(t0)
             bnez t1, move_up2
             
     j loop
