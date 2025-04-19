@@ -1,3 +1,11 @@
+#Tecnológico de Costa Rica - Ingeniería Electrónica
+#Veronica Cambronero, Pablo Elizondo y Marycruz Fallas.
+#Proyecto I. Diseño de Sistemas Digitales.
+
+#-----------------------------------------------------
+#                      PONG GAME
+#-----------------------------------------------------
+
 .data
 LED_MATRIX_BASE: .word 0xf0000000
 MATRIX_WIDTH:    .word 0x37      # d'55
